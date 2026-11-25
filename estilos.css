@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #121214;
+  color: #ffffff;
+}
+
+/* Seção 1: Texto na esquerda + Vídeo na direita */
+.secao-video {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.coluna-texto,
+.coluna-video {
+  flex: 1;
+  min-width: 0; /* Impede o vídeo de vazar para fora da tela */
+}
+
+.coluna-texto h1 {
+  margin-bottom: 10px;
+  color: #068c94;
+}
+
+.coluna-texto h2 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #068c94;
+}
+
+.coluna-texto ol {
+  margin-left: 20px;
+  margin-bottom: 15px;
+  color: #068c94;
+}
+p{
+    color: #068c94;
+}
+
+/* Seção 2: Black Friday centralizada */
+.secao-blackfriday {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  color: #068c94;
+}
+
+.secao-blackfriday h2 {
+  margin-bottom: 20px;
+}
+
+.video-destaque {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* CONTROLE DO TAMANHO DOS VÍDEOS NA TELA */
+/* Contêiner que segura o vídeo e o botão por cima */
+.player-wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.videoClique {
+  width: 100%;
+  max-width: 100%;
+  max-height: 75vh;
+  height: auto;
+  display: block;
+}
+
+/* Botões WhatsApp */
+.botoes-contato {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.botaoWhatsapp {
+  background-color: #25d366;
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+}
+
+.botaoWhatsapp:hover {
+  background-color: #1ebe5d;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #1e1e24;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+.rodape-conteudo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.rodape a {
+  color: #068c94;
+  text-decoration: none;
+}
+
+/* Celular: coloca texto em cima e vídeo embaixo */
+@media (max-width: 768px) {
+  .secao-video {
+    flex-direction: column;
+  }
+}

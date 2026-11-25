@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Projeto ForceLab</title>
+</head>
+
+<body>
+
+    <section class="secao-video">
+        <!-- Bloco da esquerda (Texto) -->
+        <div class="coluna-texto">
+            <h1>Você já conhece o ForceLab?</h1>
+            <h2>Ainda não? Então vou te dar 4 motivos para você conhecer:</h2>
+            <ol>
+                <li>Profissionais qualificados e atenciosos</li>
+                <li>Você vai ter um dia produtivo, logo após treinar</li>
+                <li>Uma vida saudável e o corpo em forma</li>
+                <li>Um precinho que cabe no seu bolso</li>
+            </ol>
+            <p>Se liga nesse vídeo ao lado:</p>
+        </div>
+
+        <!-- Bloco da direita (Vídeo 1 com aviso) -->
+        <div class="coluna-video">
+    <div class="player-wrapper">
+        <video class="videoClique" playsinline 
+            onclick="this.paused ? this.play() : this.pause()"
+            onplay="this.parentElement.classList.add('tocando')" 
+            onpause="this.parentElement.classList.remove('tocando')">
+            <source src="video 1.mp4" type="video/mp4">
+        </video>
+        
+    </div>
+</div>
+    </section>
+
+    <section class="secao-blackfriday">
+        <h2>Agora que você já conhece um pouco do ForceLab, estamos com uma promoção de Black Friday durante os dias 27 a 30 de novembro. Se liga nesse vídeo:</h2>
+
+        <!-- Vídeo 2 com aviso -->
+        <div class="video-destaque">
+            <div class="player-wrapper" onclick="const v = this.querySelector('video'); v.paused ? v.play() : v.pause()">
+                <video class="videoClique" playsinline 
+                    onplay="this.nextElementSibling.style.display='none'" 
+                    onpause="this.nextElementSibling.style.display='flex'">
+                    <source src="video 3.mp4" type="video/mp4">
+                </video>
+             
+            </div>
+        </div>
+
+        <p>Para mais informações clique agora mesmo no botão abaixo entre no nosso grupo da Black Friday</p>
+
+        <div class="botoes-contato">
+            <a class="botaoWhatsapp" href="https://chat.whatsapp.com/GhfuceeRt4X5Fz2zhOn6UH" target="_blank">Grupo Black Friday</a>
+            
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <div class="rodape-coluna">
+                <h3>ForceLab</h3>
+                <p>&copy; 2026 ForceLab. Todos os direitos reservados.</p>
+            </div>
+
+            <div class="rodape-coluna">
+                <h3>Redes Sociais</h3>
+                <div class="redes-sociais">
+                    <a href="https://instagram.com" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
